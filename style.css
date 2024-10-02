@@ -125,7 +125,7 @@ li {
 .card-button {
 	display: flex;
 	justify-content: center;
-	width: 170%;
+	width: 165%;
 }
 .read-more {
 	font-family: "Lora", sans-serif;
@@ -212,6 +212,9 @@ li {
 	li {
 		font-size: 0.75rem;
 		padding-bottom: 0.2rem;
+	}
+	.card-button {
+		width: 172%;
 	}
 	.read-more {
 		margin-top: 1.5rem;
