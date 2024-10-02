@@ -129,7 +129,7 @@ li {
 }
 .read-more {
 	font-family: "Lora", sans-serif;
-	margin-top: 2rem;
+	margin-top: 1.2rem;
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -217,7 +217,7 @@ li {
 		width: 172%;
 	}
 	.read-more {
-		margin-top: 1.5rem;
+		margin-top: 1rem;
 		padding: 0.2rem 0.5rem;
 		border: 1px solid #fff;
 		font-size: 0.8rem;
