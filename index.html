@@ -6,12 +6,18 @@
 		<meta name="description" content="NIMS Test task" />
 		<title>NIMS Task</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<h1 class="sdgs-h1">10 UN SDGs Adopted by Nims</h1>
 
 		<div class="sdg-cards">
-			<div class="image-card">
+			<div class="image-card" id="first-image-card">
 				<img
 					class="underlay-image"
 					src="./assets/un-sdg-1-bg.webp"
@@ -22,6 +28,29 @@
 					src="./assets/un-sdg-1.webp"
 					alt="No Poverty"
 				/>
+				<div class="first-image-card-text">
+					<div class="card-title">
+						<h2 class="title-1">1</h2>
+						<h3 class="title-no">No</h3>
+						<h3 class="title-poverty">Poverty</h3>
+					</div>
+					<blockquote>
+						"End poverty in all forms through empowerment, equality, and
+						sustainable development."
+					</blockquote>
+					<hr />
+					<ul class="first-image-card-actions">
+						<li>Free Medical Camps</li>
+						<li>Education for Poor Students</li>
+						<li>Free Food for Patients</li>
+						<li>Solar Energy Consumption</li>
+						<li>Green Campus</li>
+						<li>Free Delivery Scheme</li>
+					</ul>
+					<div class="card-button">
+						<button class="read-more">Read More</button>
+					</div>
+				</div>
 			</div>
 			<!-- Can be improved by using loops in javascript, repeated code block for images as this was a HTML CSS task -->
 			<div class="image-card">

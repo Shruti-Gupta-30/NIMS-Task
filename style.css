@@ -13,6 +13,7 @@ body {
 	align-items: center;
 	min-height: 100vh;
 	margin: 1rem;
+	font-family: "Lora", serif;
 }
 
 .sdgs-h1 {
@@ -48,6 +49,109 @@ body {
 	width: auto;
 }
 
+#first-image-card:hover .first-image-card-text {
+	opacity: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-85%, -50%);
+}
+#first-image-card .first-image-card-text {
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-85%, -85%);
+}
+/* #first-image-card {
+	background-color: #e5243b;
+	color: #fff;
+} */
+#first-image-card:hover {
+	background-color: #e5243b;
+	color: #fff;
+}
+/* #first-image-card .underlay-image,
+#first-image-card .overlay-image {
+	opacity: 0;
+	transition: opacity 0.2s linear;
+} */
+#first-image-card:hover .underlay-image,
+#first-image-card:hover .overlay-image {
+	opacity: 0;
+	transition: opacity 0.2s linear;
+}
+.card-title {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: 2;
+	font-family: "Oswald", sans-serif;
+}
+.card-title .title-1 {
+	grid-row-start: 1;
+	grid-row-end: 3;
+	font-size: 4rem;
+	font-weight: 400;
+	justify-self: center;
+	align-self: stretch;
+}
+
+.card-title .title-no {
+	grid-column-start: 2;
+	font-size: 2rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	align-self: bottom;
+}
+
+.card-title .title-poverty {
+	grid-column-start: 2;
+	grid-row-start: 2;
+	font-size: 2rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+blockquote {
+	width: 180%;
+	margin: 1rem 1rem 1rem 0rem;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+hr {
+	width: 170%;
+	margin-bottom: 1.5rem;
+}
+
+ul {
+	list-style: none;
+}
+li {
+	padding-bottom: 0.5rem;
+	font-size: 1.2rem;
+	width: 200%;
+	font-weight: 600;
+}
+
+.card-button {
+	display: flex;
+	justify-content: center;
+	width: 170%;
+}
+.read-more {
+	font-family: "Lora", sans-serif;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	padding: 0.5rem 1rem;
+	background-color: #d1677481;
+	color: white;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	font-size: 1.2rem;
+}
 @media only screen and (max-width: 1280px) {
 	.sdg-cards {
 		grid-template-columns: repeat(4, 1fr);
@@ -87,6 +191,44 @@ body {
 	}
 	#tenth-card {
 		grid-column-start: 3;
+	}
+
+	#first-image-card:hover .first-image-card-text {
+		opacity: 1;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-90%, -50%);
+	}
+	.card-title .title-1 {
+		font-size: 2rem;
+	}
+	.card-title .title-no {
+		font-size: 1rem;
+	}
+	.card-title .title-poverty {
+		font-size: 1rem;
+	}
+	blockquote {
+		width: 185%;
+		margin: 0.6rem 0.6rem 0.6rem 0rem;
+		font-size: 0.75rem;
+	}
+	hr {
+		height: 2px;
+		color: #fff;
+		border-color: #fff;
+		margin-bottom: 0.6rem;
+	}
+	li {
+		font-size: 0.75rem;
+		padding-bottom: 0.2rem;
+	}
+	.read-more {
+		margin-top: 1.5rem;
+		padding: 0.2rem 0.5rem;
+		border: 1px solid #fff;
+		font-size: 0.8rem;
 	}
 }
 @media only screen and (max-width: 640px) {
