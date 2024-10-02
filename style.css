@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+	box-sizing: border-box;
+}
+
+body {
+	overflow: scroll;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 1rem;
+}
+
+.sdgs-h1 {
+	text-align: center;
+	font-size: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+}
+
+.sdg-cards {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: auto;
+	gap: 1rem;
+	max-width: 1300px;
+}
+
+.image-card {
+	position: relative;
+}
+
+.underlay-image {
+	height: 33rem;
+	position: relative;
+	width: auto;
+}
+.overlay-image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-85%, 35%);
+	height: 11rem;
+	width: auto;
+}
+
+@media only screen and (max-width: 1280px) {
+	.sdg-cards {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	/* Manipulating hanging cards positioning for improved UI */
+	#ninth-card {
+		grid-column-start: 2;
+	}
+	#tenth-card {
+		grid-column-start: 3;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.sdg-cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	#ninth-card {
+		grid-column-start: inherit;
+	}
+	#tenth-card {
+		grid-column-start: 2;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.sdg-cards {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.underlay-image {
+		height: 20rem;
+	}
+	.overlay-image {
+		transform: translate(-85%, 30%);
+		height: 7rem;
+	}
+	#ninth-card {
+		grid-column-start: 2;
+	}
+	#tenth-card {
+		grid-column-start: 3;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.sdg-cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.sdgs-h1 {
+		font-size: 2rem;
+		margin-bottom: 1.5rem;
+	}
+	#ninth-card {
+		grid-column-start: inherit;
+	}
+	#tenth-card {
+		grid-column-start: 2;
+	}
+}
+@media only screen and (max-width: 450px) {
+	.sdg-cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#tenth-card {
+		grid-column-start: inherit;
+	}
+}
